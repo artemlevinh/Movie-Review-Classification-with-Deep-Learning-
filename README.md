@@ -14,11 +14,10 @@ In the realm of natural language processing (NLP), sentiment analysis plays a cr
 - Load the data and split it into training and testing sets: X_train, X_test, y_train.
 
 
-### 2. Preprocess data using Sklearn TFIDF Vectorizer
-- Use the Sklearn TFIDF Vectorizer to preprocess the text data. Sklearn TFIDF Vectorizer helps in converting text data into a numerical format that machine learning algorithms can understand and process. 
+### 2. Data Visulaization and Preprocessing
+-In the exploratory data analysis (EDA) phase, we visualizes the class balance, review lengths, and word frequency per class for movie reviews. We CountVectorizer to analyze word frequency, matplotlib and seaborn for plotting, and WordCloud to generate a visual representation of word frequency.
+- Defines a custom tokenizer using NLTK's WordNet lemmatizer and a TF-IDF vectorizer. It preprocesses text data by tokenizing, lemmatizing, and removing stopwords, then fits the vectorizer to the training data and transforms both the training and test data into TF-IDF features.
 - Write and save a preprocessor function for later use.
-
-In the exploratory data analysis (EDA) phase, we analyzed the class balance of the movie reviews dataset to understand the distribution of positive and negative reviews. Additionally, we examined the distribution of review lengths to gain insights into the length of reviews in the dataset. Furthermore, we explored the word frequency per class to identify the most common words used in positive and negative reviews.
 
 ### 3. Fit model on preprocessed data
 - Fit RNN, LSTM, and  on the preprocessed data.
