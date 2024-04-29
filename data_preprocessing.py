@@ -7,6 +7,16 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 
+
+def to_series(df):
+    # Check if the DataFrame has only one column
+    if len(df.columns) == 1:
+        # Convert to Series and return
+        return df.iloc[:, 0]
+    else:
+        # Return the DataFrame as is
+        return df
+
 class Preprocessor:
     def __init__(self):
         self.vectorizer = TfidfVectorizer(stop_words='english')
