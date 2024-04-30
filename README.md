@@ -40,7 +40,14 @@ In the realm of natural language processing (NLP), sentiment analysis plays a cr
 ### Requirements
 - Python 3.x
 - Sklearn
-- 
+- aimodelshare
+- pandas
+- scikit-learn
+- numpy
+- nltk
+- matplotlib
+- seaborn
+- wordcloud
 
 ### Installation
 ```bash
