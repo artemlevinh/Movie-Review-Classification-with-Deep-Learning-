@@ -56,9 +56,5 @@ pip install -r requirements.txt
 
 ## Running the code
 
-To train the model and generate predictions, run the following command:
-
-```bash
-python main.py
-```
+To train the model and generate predictions, run Data_Analysis_front_end.ipynb.
 
